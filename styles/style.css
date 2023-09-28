@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bahiana', sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  background: url(../resources/wallpaper.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#titulo{
+  font-weight: bold;
+  color: white;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  font-size: 80px;
+  text-shadow: 7px 7px 2px black;
+}
+
+main{
+
+  width: 100%;
+  height: 80%;
+  padding: 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-sliders{
+  margin: 30px;
+  width: 80%;
+  height: 500px;
+  background-color: rgb(11, 18, 24);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  white-space: nowrap;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  -webkit-box-shadow: 5px 4px 15px 4px rgba(0,0,0,0.95); 
+  box-shadow: 5px 4px 15px 4px rgba(0,0,0,0.95);
+}
+
+#right-arrow, #left-arrow{
+  margin: 20px;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  background-color: rgba(178, 190, 200, 0.418);
+  border-radius: 16px;
+}
+
+#right-arrow:hover, #left-arrow:hover{
+  transform: scale(1.3);
+}
+
+
+.slider img{
+  width: 350px;
+  height: 450px;
+  -webkit-box-shadow: 5px 4px 15px 4px rgba(0,0,0,0.95); 
+  box-shadow: 5px 4px 15px 4px rgba(0,0,0,0.95);
+}
+
+.ocultar{
+  display: none;
+}
+
+.activar{
+  display: flex;
+}
+
+.slider-nav{
+  margin: 30px;
+  width: 30%;
+  background-color: rgba(178, 190, 200, 0.418);
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  gap: 80px;
+  border-radius: 8px;
+}
+
+.slider-nav img{
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+footer{
+  padding: 0.3em;
+
+  height: fit-content;
+  display: flex;
+  padding: 0.3em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+  font-size: 30px;
+}
+
+footer img{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}  
