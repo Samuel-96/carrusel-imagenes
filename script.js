@@ -52,11 +52,11 @@ function navSlider(){
     nav.children[i].addEventListener("click", function(){
       console.log(nav.children[i].getAttribute("data-index"));
       switch(nav.children[i].getAttribute("data-index")){
-        case "0": slider.item(pos).children[0].className = "ocultar"; slider.item(0).children[0].className = "activar"; pos = 0; cambiarEstadoNav(pos); break;
-        case "1": slider.item(pos).children[0].className = "ocultar"; slider.item(1).children[0].className = "activar"; pos = 1; cambiarEstadoNav(pos); break;
-        case "2": slider.item(pos).children[0].className = "ocultar"; slider.item(2).children[0].className = "activar"; pos = 2; cambiarEstadoNav(pos); break;
-        case "3": slider.item(pos).children[0].className = "ocultar"; slider.item(3).children[0].className = "activar"; pos = 3; cambiarEstadoNav(pos); break;
-        case "4": slider.item(pos).children[0].className = "ocultar"; slider.item(4).children[0].className = "activar"; pos = 4; cambiarEstadoNav(pos);
+        case "0": slider.item(pos).children[0].className = "ocultar"; slider.item(0).children[0].className = "activar"; pos = 0; cambiarEstadoNav(pos); titulo.textContent = titulos[pos]; break;
+        case "1": slider.item(pos).children[0].className = "ocultar"; slider.item(1).children[0].className = "activar"; pos = 1; cambiarEstadoNav(pos); titulo.textContent = titulos[pos]; break;
+        case "2": slider.item(pos).children[0].className = "ocultar"; slider.item(2).children[0].className = "activar"; pos = 2; cambiarEstadoNav(pos); titulo.textContent = titulos[pos]; break;
+        case "3": slider.item(pos).children[0].className = "ocultar"; slider.item(3).children[0].className = "activar"; pos = 3; cambiarEstadoNav(pos); titulo.textContent = titulos[pos]; break;
+        case "4": slider.item(pos).children[0].className = "ocultar"; slider.item(4).children[0].className = "activar"; pos = 4; cambiarEstadoNav(pos); titulo.textContent = titulos[pos];
       }
     });
   }
